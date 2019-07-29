@@ -1,0 +1,9 @@
+pytest
+gunicorn
+uvicorn
+fastapi
+semantic-version
+requests
+pytest-cov
+boto3
+radon
