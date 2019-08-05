@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from starlette.config import Config
 from src import config
-from src.models import Packages
+from src.api_models import Packages
 
 # Initialize fastapi
 app = FastAPI()
