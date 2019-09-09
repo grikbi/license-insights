@@ -1,9 +1,6 @@
-FROM centos:7
-LABEL maintainer="Mitesh Patel<mitpatel@redhat.com>"
+FROM farrion/python3:latest
 
-RUN yum install -y epel-release && \
-    yum install -y python36-setuptools gcc gcc-c++ python36-pip python36-devel \
-    openssl-devel && yum clean all
+LABEL maintainer="Mitesh Patel<mitpatel@redhat.com>"
 
 # install python packages
 COPY ./requirements.txt /

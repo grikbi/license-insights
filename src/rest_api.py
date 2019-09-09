@@ -37,8 +37,12 @@ app.stack_license_analyzer = StackLicenseAnalyzer()
 @app.get('/api/v1/liveness')
 def liveness():
     """Handle the REST API endpoint /."""
-    print("RELOAD")
     return {"status": "ok"}
+
+@app.get('/api/v1/readiness')
+def liveness():
+    """Handle the REST API endpoint /."""
+    return {"status": "ready"}
 
 
 @app.post('/api/v1/stack_license')
