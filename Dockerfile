@@ -12,5 +12,6 @@ COPY ./data/synonyms /data/synonyms
 RUN cp /src/config.py.template /src/config.py
 
 ADD scripts/entrypoint.sh /bin/entrypoint.sh
+EXPOSE 6162
 
 ENTRYPOINT ["/bin/entrypoint.sh"]
